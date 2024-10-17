@@ -7,9 +7,9 @@ import { lusitana } from './ui/fonts';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-      <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
+      <div className="relative flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
         <AcmeLogo />
-        <div className='relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black'>
+        <div className='absolute bottom-5 right-5 w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black'>
         </div>
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
@@ -31,7 +31,7 @@ export default function Page() {
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           <Image
             src="/hero-desktop.png"
-            alt="Hero desktop"
+            alt="Screenshots of the dashboard project showing desktop version"
             width={1000}
             height={760}
             layout="responsive"
@@ -39,7 +39,7 @@ export default function Page() {
           />
           <Image
             src="/hero-mobile.png"
-            alt="Hero mobile"
+            alt="Screenshots of the dashboard project showing desktop version"
             width={560}
             height={620}
             layout="responsive"
